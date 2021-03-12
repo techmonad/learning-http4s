@@ -8,7 +8,7 @@ lazy val root = (project in file("."))
     organization := "com.techmonad",
     name := "learning-http4s",
     version := "0.0.1-SNAPSHOT",
-    scalaVersion := "2.12.13",
+    scalaVersion := "2.13.5",
     scalacOptions ++= Seq("-Ypartial-unification"),
     libraryDependencies ++= Seq(
       "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
