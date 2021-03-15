@@ -1,4 +1,4 @@
-val Http4sVersion = "0.22-129-24d065b"
+val Http4sVersion = "0.22-143-49b5a8d"
 val CirceVersion = "0.13.0"
 val Specs2Version = "4.10.6"
 val LogbackVersion = "1.2.3"
@@ -19,8 +19,8 @@ lazy val root = (project in file("."))
       "org.specs2"      %% "specs2-core"         % Specs2Version % "test",
       "ch.qos.logback"  %  "logback-classic"     % LogbackVersion
     ),
-    addCompilerPlugin("org.typelevel" %% "kind-projector"     % "0.10.0"),
-    addCompilerPlugin("com.olegpy"     %% "better-monadic-for" % "0.2.4")
+    addCompilerPlugin("org.spire-math" %% "kind-projector"     % "0.9.6"),
+    addCompilerPlugin("com.olegpy"     %% "better-monadic-for" % "0.3.1")
   )
 
 scalacOptions ++= Seq(
